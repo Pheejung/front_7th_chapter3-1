@@ -19,8 +19,6 @@ interface TableProps {
   columns?: Column[];
   data?: any[];
   striped?: boolean;
-  bordered?: boolean;
-  hover?: boolean;
   pageSize?: number;
   searchable?: boolean;
   sortable?: boolean;
@@ -39,8 +37,6 @@ export const Table: React.FC<TableProps> = ({
   columns,
   data = [],
   striped = false,
-  bordered = false,
-  hover = false,
   pageSize = 10,
   searchable = false,
   sortable = false,
